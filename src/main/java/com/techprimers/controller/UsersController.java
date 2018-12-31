@@ -29,4 +29,9 @@ public class UsersController {
         userJpaRespository.save(users);
         return userJpaRespository.findByName(users.getName());
     }
+    
+    @GetMapping(value = "/changed")
+    public Users changed(){
+        return userJpaRespository.findByName(name);
+    }
 }
