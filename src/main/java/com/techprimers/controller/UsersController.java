@@ -30,7 +30,7 @@ public class UsersController {
         return userJpaRespository.findByName(users.getName());
     }
     
-    @GetMapping(value = "/changed")
+    @GetMapping(value = "/changed/changed")
     public String changed(){
         return "changed";
     }
