@@ -31,7 +31,7 @@ public class UsersController {
     }
     
     @GetMapping(value = "/changed")
-    public Users changed(){
-        return userJpaRespository.findByName(name);
+    public String changed(){
+        return "changed";
     }
 }
